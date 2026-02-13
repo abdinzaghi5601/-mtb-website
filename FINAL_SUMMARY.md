@@ -463,7 +463,7 @@ MTB website/
 
 ## 🎉 Congratulations!
 
-You now have a **professional, production-ready website** for MTB Spares!
+You now have a **professional, production-ready website** for TBM Machines and Manufacturing Services!
 
 ### **What You've Accomplished:**
 ✅ Modern Next.js website

@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
           <p><strong>Message:</strong></p>
           <p>${message.replace(/\n/g, "<br>")}</p>
           <hr>
-          <p><small>This email was sent from the MTB Spares contact form.</small></p>
+          <p><small>This email was sent from the TBM Machines and Manufacturing Services contact form.</small></p>
         `,
         text: `
           New Contact Form Submission
@@ -73,7 +73,7 @@ export async function POST(request: NextRequest) {
           ${message}
           
           ---
-          This email was sent from the MTB Spares contact form.
+          This email was sent from the TBM Machines and Manufacturing Services contact form.
         `,
       }),
     });

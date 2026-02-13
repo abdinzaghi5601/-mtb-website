@@ -16,7 +16,7 @@ Print this and check off as you complete each step!
 ### Step 2: Get Google Analytics ID (5 min)
 - [ ] Go to https://analytics.google.com
 - [ ] Sign in with Google account
-- [ ] Create new property: "MTB Spares"
+- [ ] Create new property: "TBM Machines and Manufacturing Services"
 - [ ] Copy Measurement ID (starts with `G-`)
 - [ ] Save ID somewhere safe
 
@@ -204,7 +204,7 @@ Print this and check off as you complete each step!
 
 ### When Ready
 - [ ] Add custom domain
-- [ ] Set up professional email (@mtbspares.com)
+- [ ] Set up professional email (@tbmmachines.com)
 - [ ] Add more blog posts
 - [ ] Create case studies
 - [ ] Add customer testimonials

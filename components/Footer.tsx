@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">MTB Spares</h3>
+            <h3 className="text-xl font-bold mb-4">TBM Machines and Manufacturing Services</h3>
             <p className="text-gray-400 mb-4">
               Leading supplier of Tunnel Boring Machine spare parts and components in India.
             </p>
@@ -126,7 +126,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} MTB Spares. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} TBM Machines and Manufacturing Services. All rights reserved.</p>
         </div>
       </div>
     </footer>

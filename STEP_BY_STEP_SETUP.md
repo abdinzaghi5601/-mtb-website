@@ -54,7 +54,7 @@ It tracks visitors to your website - how many people visit, which pages they vie
 2. **Create Property** (if you don't have one)
    - Click "Admin" (gear icon at bottom left)
    - Click "Create Property"
-   - Property name: "MTB Spares Website"
+   - Property name: "TBM Machines and Manufacturing Services Website"
    - Select time zone: India
    - Currency: INR
    - Click "Next"

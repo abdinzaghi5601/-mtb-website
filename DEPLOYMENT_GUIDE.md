@@ -208,7 +208,7 @@ server {
 
 1. **Buy a Domain** (optional):
    - GoDaddy, Namecheap, Google Domains, etc.
-   - Example: `mtbspares.com`
+   - Example: `tbmmachines.com`
 
 2. **Add Domain in Vercel:**
    - Go to your project settings

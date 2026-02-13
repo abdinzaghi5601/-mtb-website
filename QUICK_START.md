@@ -18,7 +18,7 @@ This is the fast track to get your website fully functional!
 
 1. Go to: **https://analytics.google.com**
 2. Sign in with your Google account
-3. Create new property: **"MTB Spares Website"**
+3. Create new property: **"TBM Machines and Manufacturing Services Website"**
 4. Get **Measurement ID** (starts with `G-`)
 5. **Save it** - you'll need it in Step 3
 

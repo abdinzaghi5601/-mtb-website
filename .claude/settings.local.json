@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:www.cnrockdrill.com)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "WebFetch(domain:vercel.com)",
+      "WebFetch(domain:mtb-website-gilt.vercel.app)",
+      "Bash(gh api:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nRename company from MTB Spares to TBM Machines and Manufacturing Services\n\nUpdated all references across source code and documentation to match\nthe official company name from PAN card registration.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git config:*)"
     ]
   }
 }

@@ -33,7 +33,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About MTB Spares</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About TBM Machines and Manufacturing Services</h1>
           <p className="text-xl text-primary-100 max-w-3xl">
             Leading supplier of Tunnel Boring Machine spare parts and components in India, 
             serving major infrastructure projects across the country.
@@ -67,7 +67,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold mb-6">Our Story</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 mb-4">
-                MTB Spares has established itself as a trusted name in the Tunnel Boring Machine 
+                TBM Machines and Manufacturing Services has established itself as a trusted name in the Tunnel Boring Machine 
                 spare parts industry in India. With a project portfolio worth 522 Lakh, we have 
                 consistently delivered high-quality components to major infrastructure projects.
               </p>

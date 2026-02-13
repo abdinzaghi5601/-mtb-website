@@ -20,7 +20,7 @@ npm install
 - `app/contact/page.tsx` - Line 30, 35, 60: Replace `XXXXXXXXXX` with your phone number
 
 #### Email Address:
-- Replace `info@mtbspares.com` with your actual email address in all files
+- Replace `info@tbmmachines.com` with your actual email address in all files
 
 ### 3. Add Product Images
 

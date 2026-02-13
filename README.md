@@ -1,6 +1,6 @@
-# MTB Spares Website
+# TBM Machines and Manufacturing Services Website
 
-A professional, production-ready Next.js website for MTB Spares - a leading supplier of Tunnel Boring Machine (TBM) spare parts and components in India.
+A professional, production-ready Next.js website for TBM Machines and Manufacturing Services - a leading supplier of Tunnel Boring Machine (TBM) spare parts and components in India.
 
 ## 🎯 Status: 98% Complete - Ready to Launch!
 
@@ -206,7 +206,7 @@ Ideas for future development:
 
 ## 📞 Contact & Support
 
-**MTB Spares:**
+**TBM Machines and Manufacturing Services:**
 - Email: yaseen_md99@yahoo.com
 - Phone: +91 8985377589
 - WhatsApp: +91 8985377589
@@ -218,6 +218,6 @@ Ideas for future development:
 
 ---
 
-**Built with ❤️ for MTB Spares**
+**Built with ❤️ for TBM Machines and Manufacturing Services**
 Ready to launch in 15 minutes! 🚀
 

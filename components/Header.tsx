@@ -51,12 +51,12 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/images/logo.jpeg"
-              alt="MTB Spares Logo"
+              alt="TBM Machines and Manufacturing Services Logo"
               width={50}
               height={50}
               className="object-contain"
             />
-            <span className="text-2xl font-bold text-primary-700">MTB Spares</span>
+            <span className="text-2xl font-bold text-primary-700">TBM Machines & Manufacturing</span>
           </Link>
 
           {/* Desktop Menu */}

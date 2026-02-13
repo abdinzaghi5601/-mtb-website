@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mtbspares.com/sitemap.xml
+Sitemap: https://www.tbmmachines.com/sitemap.xml
 
