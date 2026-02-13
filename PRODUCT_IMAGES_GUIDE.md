@@ -2,7 +2,7 @@
 
 ## Current Status
 
-✅ **Logo Added**: Your MTB logo has been copied to `public/images/logo.jpeg` and is now displayed in the header.
+✅ **Logo Added**: Your TBM Machines logo has been copied to `public/images/logo.jpeg` and is now displayed in the header.
 
 ⚠️ **Product Images Needed**: The website is configured to use product images, but actual product photos need to be added.
 

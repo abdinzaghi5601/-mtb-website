@@ -26,7 +26,7 @@ This is the fast track to get your website fully functional!
 
 ## ✅ Step 3: Create .env.local File (2 min)
 
-1. Open your project folder: `C:\Users\abdul\Desktop\MTB website`
+1. Open your project folder: `C:\Users\abdul\Desktop\TBM website`
 2. Create new file named: `.env.local`
 3. Add this (replace X's with YOUR actual keys):
 

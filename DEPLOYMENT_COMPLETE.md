@@ -43,7 +43,7 @@ You can verify by visiting the repository URL above - you should see all 50 file
 7. **Wait 2-3 minutes** ⏱️
 
 8. **🎉 Your site will be live!**
-   - You'll get a URL like: `https://mtb-website-xyz.vercel.app`
+   - You'll get a URL like: `https://tbm-machines-website-xyz.vercel.app`
    - Vercel will also provide a custom domain option
 
 ---
@@ -64,7 +64,7 @@ vercel
 
 # Follow the prompts:
 # - Link to existing project? No
-# - Project name? mtb-website
+# - Project name? tbm-machines-website
 # - Directory? ./
 # - Override settings? No
 ```

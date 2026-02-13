@@ -1,6 +1,6 @@
 # 🚀 Deployment Guide - Launch Your Website
 
-This guide will help you deploy your MTB website to production.
+This guide will help you deploy your TBM Machines website to production.
 
 ---
 
@@ -30,7 +30,7 @@ If you haven't already:
 
 ```bash
 # Navigate to your project
-cd "/mnt/c/Users/abdul/Desktop/MTB website"
+cd "/mnt/c/Users/abdul/Desktop/TBM website"
 
 # Initialize git (if not done)
 git init
@@ -39,10 +39,10 @@ git init
 git add .
 
 # Commit
-git commit -m "Initial commit - MTB website ready for deployment"
+git commit -m "Initial commit - TBM Machines website ready for deployment"
 
 # Create repository on GitHub.com first, then:
-git remote add origin https://github.com/YOUR_USERNAME/mtb-website.git
+git remote add origin https://github.com/YOUR_USERNAME/tbm-machines-website.git
 git branch -M main
 git push -u origin main
 ```
@@ -87,7 +87,7 @@ git push -u origin main
    - 🎉 Your site is live!
 
 6. **Get Your URL:**
-   - Vercel gives you: `mtb-website-xyz.vercel.app`
+   - Vercel gives you: `tbm-machines-website-xyz.vercel.app`
    - You can customize the subdomain in settings
 
 **Option B - Via Vercel CLI:**
@@ -106,7 +106,7 @@ vercel
 # - Set up and deploy? Y
 # - Which scope? (your account)
 # - Link to existing project? N
-# - What's your project's name? mtb-website
+# - What's your project's name? tbm-machines-website
 # - In which directory is your code? ./
 # - Want to override settings? N
 
@@ -173,7 +173,7 @@ npm start
 npm install -g pm2
 
 # Start app
-pm2 start npm --name "mtb-website" -- start
+pm2 start npm --name "tbm-machines-website" -- start
 
 # Save PM2 config
 pm2 save

@@ -84,7 +84,7 @@ npm start
 ## 📁 Project Structure
 
 ```
-MTB website/
+TBM website/
 ├── app/
 │   ├── layout.tsx              # Root layout with GA
 │   ├── page.tsx                # Homepage

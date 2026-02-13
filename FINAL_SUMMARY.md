@@ -1,4 +1,4 @@
-# 📊 MTB Website - Final Summary
+# 📊 TBM Machines Website - Final Summary
 
 ## 🎉 What You Have
 
@@ -88,7 +88,7 @@
 ## 📦 Project Structure
 
 ```
-MTB website/
+TBM website/
 ├── app/                          # Pages & routes
 │   ├── page.tsx                  # Homepage
 │   ├── products/                 # Products pages

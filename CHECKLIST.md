@@ -1,4 +1,4 @@
-# ✅ MTB Website Launch Checklist
+# ✅ TBM Machines Website Launch Checklist
 
 Print this and check off as you complete each step!
 

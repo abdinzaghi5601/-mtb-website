@@ -10,7 +10,7 @@
 ### Step 2: Get API Key
 1. After logging in, go to **API Keys** section
 2. Click **Create API Key**
-3. Give it a name (e.g., "MTB Website")
+3. Give it a name (e.g., "TBM Machines Website")
 4. Copy the API key (starts with `re_`)
 
 ### Step 3: Configure Domain (Optional but Recommended)

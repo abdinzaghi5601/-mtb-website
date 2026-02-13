@@ -24,7 +24,7 @@ Resend is a free email service that will send contact form submissions to your e
    - After login, you'll see the dashboard
    - Click on "API Keys" in the left menu
    - Click "Create API Key"
-   - Name it: "MTB Website Contact Form"
+   - Name it: "TBM Machines Website Contact Form"
    - Copy the key (starts with `re_`)
    - **IMPORTANT:** Save this key somewhere safe - you can only see it once!
 
@@ -68,7 +68,7 @@ It tracks visitors to your website - how many people visit, which pages they vie
    - After creation, you'll see "Data Streams"
    - Click "Web"
    - Website URL: (your domain or localhost for testing)
-   - Stream name: "MTB Website"
+   - Stream name: "TBM Machines Website"
    - Click "Create stream"
    - **Copy the Measurement ID** (starts with `G-`)
 
@@ -88,7 +88,7 @@ It's a file that stores your secret keys. It's NOT uploaded to GitHub (already i
 
 **Option A - Using Terminal (if you're comfortable):**
 ```bash
-cd "/mnt/c/Users/abdul/Desktop/MTB website"
+cd "/mnt/c/Users/abdul/Desktop/TBM website"
 nano .env.local
 ```
 
@@ -103,7 +103,7 @@ Press `Ctrl+X`, then `Y`, then `Enter` to save.
 
 **Option B - Using File Explorer (easier):**
 1. Open File Explorer
-2. Navigate to: `C:\Users\abdul\Desktop\MTB website`
+2. Navigate to: `C:\Users\abdul\Desktop\TBM website`
 3. Right-click → New → Text Document
 4. Name it: `.env.local` (yes, with the dot at the start)
 5. If Windows complains about the filename, that's OK, click Yes
@@ -210,7 +210,7 @@ Next.js only reads .env.local when it starts, so you need to restart.
 ### Where to Add Images:
 
 ```
-MTB website/
+TBM website/
   └── public/
       └── images/
           └── products/

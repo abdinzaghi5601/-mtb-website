@@ -8,7 +8,7 @@ All 6 requested enhancements have been successfully implemented!
 ## 1. ✅ Favicon from Logo
 
 **What was added:**
-- Your MTB logo now appears in browser tabs and bookmarks
+- Your TBM Machines logo now appears in browser tabs and bookmarks
 - Configured in `app/layout.tsx` using Next.js metadata
 
 **Location:**

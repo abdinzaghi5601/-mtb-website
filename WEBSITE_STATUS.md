@@ -12,7 +12,7 @@
 ### Features (100% Complete)
 - ✅ **Responsive Design** - Mobile, tablet, desktop
 - ✅ **SEO Optimized** - Metadata, sitemap, robots.txt
-- ✅ **Logo Integration** - MTB logo in header
+- ✅ **Logo Integration** - TBM Machines logo in header
 - ✅ **Contact Info** - Phone, email, WhatsApp updated
 - ✅ **Navigation** - Header with mobile menu
 - ✅ **Footer** - Links, contact info, social media placeholders

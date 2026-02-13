@@ -8,7 +8,7 @@
 - **WhatsApp**: All WhatsApp links now point to `+91 8985377589`
 
 ### 2. ✅ Logo Integration
-- Your MTB logo has been copied to `public/images/logo.jpeg`
+- Your TBM Machines logo has been copied to `public/images/logo.jpeg`
 - Logo is now displayed in the website header
 - Professional branding throughout the site
 
@@ -109,7 +109,7 @@ Each product includes:
 ## 📁 File Structure
 
 ```
-MTB website/
+TBM website/
 ├── app/
 │   ├── page.tsx              # Homepage ✅
 │   ├── products/
