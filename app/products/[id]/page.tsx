@@ -196,7 +196,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
     return (
       <div className="container mx-auto px-4 py-12 text-center">
         <h1 className="text-2xl font-bold mb-4">Product Not Found</h1>
-        <Link href="/products" className="text-primary-600 hover:underline">
+        <Link href="/products" className="text-[#CC0000] hover:underline">
           Back to Products
         </Link>
       </div>
@@ -209,7 +209,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
         {/* Back Button */}
         <Link
           href="/products"
-          className="inline-flex items-center gap-2 text-gray-600 hover:text-primary-600 mb-6"
+          className="inline-flex items-center gap-2 text-gray-600 hover:text-[#CC0000] mb-6"
         >
           <FiArrowLeft />
           Back to Products
@@ -250,7 +250,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                     key={index}
                     onClick={() => setSelectedImage(index)}
                     className={`relative h-20 bg-gray-200 rounded overflow-hidden border-2 ${
-                      selectedImage === index ? "border-primary-600" : "border-transparent"
+                      selectedImage === index ? "border-[#CC0000]" : "border-transparent"
                     }`}
                   >
                     <Image
@@ -268,7 +268,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           {/* Product Info */}
           <div>
             <div className="bg-white rounded-lg shadow-md p-8">
-              <span className="text-xs font-semibold text-primary-600 uppercase">
+              <span className="text-xs font-semibold text-[#CC0000] uppercase">
                 {product.category}
               </span>
               <h1 className="text-3xl font-bold mt-2 mb-4">{product.name}</h1>
@@ -276,7 +276,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
 
               {product.price && (
                 <div className="mb-6">
-                  <span className="text-2xl font-bold text-primary-600">{product.price}</span>
+                  <span className="text-2xl font-bold text-[#CC0000]">{product.price}</span>
                 </div>
               )}
 
@@ -297,7 +297,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
               <div className="space-y-3">
                 <Link
                   href="/contact"
-                  className="w-full bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors inline-flex items-center justify-center gap-2"
+                  className="w-full bg-[#CC0000] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#AA0000] transition-colors inline-flex items-center justify-center gap-2"
                 >
                   Request Quote
                 </Link>

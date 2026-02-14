@@ -12,23 +12,25 @@ export default function Header() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/products", label: "Products" },
+    { href: "/manufacturing", label: "Manufacturing" },
     { href: "/about", label: "About Us" },
+    { href: "/market", label: "Market & Finance" },
     { href: "/blog", label: "Blog" },
     { href: "/faq", label: "FAQ" },
     { href: "/contact", label: "Contact" },
   ];
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-[#0A0A0A] sticky top-0 z-50 border-b border-white/5">
       {/* Top Bar */}
-      <div className="bg-primary-700 text-white py-2">
+      <div className="bg-[#CC0000] text-white py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-4">
-            <a href="tel:+918985377589" className="flex items-center gap-1 hover:text-primary-200">
+            <a href="tel:+918985377589" className="flex items-center gap-1 hover:text-red-200 transition-colors">
               <FiPhone className="w-4 h-4" />
               <span>+91 8985377589</span>
             </a>
-            <a href="mailto:yaseen_md99@yahoo.com" className="flex items-center gap-1 hover:text-primary-200">
+            <a href="mailto:yaseen_md99@yahoo.com" className="hidden sm:flex items-center gap-1 hover:text-red-200 transition-colors">
               <FiMail className="w-4 h-4" />
               <span>yaseen_md99@yahoo.com</span>
             </a>
@@ -37,7 +39,7 @@ export default function Header() {
             href="https://wa.me/918985377589"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 hover:text-primary-200"
+            className="flex items-center gap-1 hover:text-red-200 transition-colors"
           >
             <FaWhatsapp className="w-4 h-4" />
             <span>WhatsApp</span>
@@ -52,27 +54,29 @@ export default function Header() {
             <Image
               src="/images/logo.jpeg"
               alt="TBM Machines and Manufacturing Services Logo"
-              width={50}
-              height={50}
-              className="object-contain"
+              width={44}
+              height={44}
+              className="object-contain rounded-lg"
             />
-            <span className="text-2xl font-bold text-primary-700">TBM Machines & Manufacturing</span>
+            <span className="text-lg font-black text-white hidden sm:block">
+              TBM <span className="text-[#CC0000]">Machines</span>
+            </span>
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+                className="text-gray-300 hover:text-[#CC0000] font-medium text-sm transition-colors"
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="/contact"
-              className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors"
+              className="bg-[#CC0000] text-white px-5 py-2 rounded-lg font-bold text-sm hover:bg-[#AA0000] transition-colors"
             >
               Get Quote
             </Link>
@@ -80,7 +84,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-700"
+            className="lg:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -90,12 +94,12 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t pt-4">
+          <div className="lg:hidden mt-4 pb-4 border-t border-white/10 pt-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="block py-2 text-gray-700 hover:text-primary-600 font-medium"
+                className="block py-2 text-gray-300 hover:text-[#CC0000] font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
@@ -103,7 +107,7 @@ export default function Header() {
             ))}
             <Link
               href="/contact"
-              className="block mt-4 bg-primary-600 text-white px-6 py-2 rounded-lg text-center hover:bg-primary-700 transition-colors"
+              className="block mt-4 bg-[#CC0000] text-white px-6 py-2 rounded-lg text-center font-bold hover:bg-[#AA0000] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Get Quote
@@ -114,4 +118,3 @@ export default function Header() {
     </header>
   );
 }
-

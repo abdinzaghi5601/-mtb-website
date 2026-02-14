@@ -4,7 +4,8 @@ import { useState, useMemo, Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import { FiFilter, FiX } from "react-icons/fi";
+import { FiFilter } from "react-icons/fi";
+import ProductsCatalog from "@/components/ProductsCatalog";
 
 interface Product {
   id: string;
@@ -109,34 +110,33 @@ function ProductsContent() {
   }, [selectedCategory]);
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-12">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">Our Products</h1>
-          <p className="text-xl text-primary-100">
-            Comprehensive range of TBM spare parts and components
-          </p>
-        </div>
-      </section>
+    <div className="min-h-screen">
+      {/* DPR-based catalog */}
+      <ProductsCatalog />
 
-      <div className="container mx-auto px-4 py-8">
-        {/* Filters */}
-        <div className="mb-8">
-          <button
-            onClick={() => setShowFilters(!showFilters)}
-            className="md:hidden flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-md mb-4"
-          >
-            <FiFilter className="w-5 h-5" />
-            <span>Filters</span>
-          </button>
+      {/* Existing product grid for detail page links */}
+      <section className="bg-[#050505] py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-[#CC0000] border border-[#CC0000]/30 px-3 py-1 rounded-full mb-4">
+              Product Catalogue
+            </span>
+            <h2 className="text-3xl md:text-4xl font-black text-white">
+              Browse Individual <span className="text-[#CC0000]">Products</span>
+            </h2>
+          </div>
 
-          <div
-            className={`${
-              showFilters ? "block" : "hidden"
-            } md:block bg-white p-6 rounded-lg shadow-md`}
-          >
-            <div className="flex flex-wrap gap-4">
+          {/* Filters */}
+          <div className="mb-8">
+            <button
+              onClick={() => setShowFilters(!showFilters)}
+              className="md:hidden flex items-center gap-2 bg-[#111] border border-white/10 text-white px-4 py-2 rounded-xl mb-4"
+            >
+              <FiFilter className="w-5 h-5" />
+              <span>Filters</span>
+            </button>
+
+            <div className={`${showFilters ? "block" : "hidden"} md:flex flex-wrap gap-3 justify-center`}>
               {categories.map((category) => (
                 <button
                   key={category.value}
@@ -144,10 +144,10 @@ function ProductsContent() {
                     setSelectedCategory(category.value);
                     setShowFilters(false);
                   }}
-                  className={`px-6 py-2 rounded-lg font-medium transition-colors ${
+                  className={`px-5 py-2 rounded-full text-sm font-bold transition-all duration-200 ${
                     selectedCategory === category.value
-                      ? "bg-primary-600 text-white"
-                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                      ? "bg-[#CC0000] text-white"
+                      : "bg-[#111] text-gray-400 border border-white/10 hover:border-white/30"
                   }`}
                 >
                   {category.label}
@@ -155,60 +155,63 @@ function ProductsContent() {
               ))}
             </div>
           </div>
-        </div>
 
-        {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredProducts.map((product) => (
-            <Link
-              key={product.id}
-              href={`/products/${product.id}`}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
-            >
-              <div className="relative h-64 bg-gray-200">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <span className="text-xs font-semibold text-primary-600 uppercase">
-                  {product.category}
-                </span>
-                <h3 className="text-xl font-semibold mt-2 mb-2">{product.name}</h3>
-                <p className="text-gray-600 mb-4 line-clamp-2">{product.description}</p>
-                {product.price && (
-                  <p className="text-primary-600 font-semibold">{product.price}</p>
-                )}
-              </div>
-            </Link>
-          ))}
-        </div>
-
-        {filteredProducts.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-gray-600 text-lg">No products found in this category.</p>
+          {/* Products Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredProducts.map((product) => (
+              <Link
+                key={product.id}
+                href={`/products/${product.id}`}
+                className="group bg-[#111] border border-white/5 rounded-2xl overflow-hidden hover:border-[#CC0000]/30 transition-all duration-300"
+              >
+                <div className="relative h-56 bg-[#0A0A0A]">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-6">
+                  <span className="text-xs font-bold text-[#CC0000] uppercase tracking-wider">
+                    {product.category}
+                  </span>
+                  <h3 className="text-white font-bold text-lg mt-2 mb-2 group-hover:text-[#CC0000] transition-colors">
+                    {product.name}
+                  </h3>
+                  <p className="text-gray-500 text-sm line-clamp-2 mb-3">{product.description}</p>
+                  {product.price && (
+                    <p className="text-[#CC0000] font-bold text-sm">{product.price}</p>
+                  )}
+                </div>
+              </Link>
+            ))}
           </div>
-        )}
-      </div>
+
+          {filteredProducts.length === 0 && (
+            <div className="text-center py-12">
+              <p className="text-gray-500 text-lg">No products found in this category.</p>
+            </div>
+          )}
+        </div>
+      </section>
     </div>
   );
 }
 
 export default function ProductsPage() {
   return (
-    <Suspense fallback={
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading products...</p>
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-[#0A0A0A] flex items-center justify-center">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#CC0000] mx-auto mb-4"></div>
+            <p className="text-gray-500">Loading products...</p>
+          </div>
         </div>
-      </div>
-    }>
+      }
+    >
       <ProductsContent />
     </Suspense>
   );
 }
-

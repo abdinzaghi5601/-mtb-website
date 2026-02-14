@@ -48,10 +48,11 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-16">
+      <section className="bg-[#0A0A0A] text-white py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Blog & News</h1>
-          <p className="text-xl text-primary-100 max-w-2xl">
+          <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-[#CC0000] border border-[#CC0000]/30 px-3 py-1 rounded-full mb-4">Blog</span>
+          <h1 className="text-4xl md:text-5xl font-black mb-4">Blog & <span className="text-[#CC0000]">News</span></h1>
+          <p className="text-xl text-gray-400 max-w-2xl">
             Stay updated with the latest insights, technical guides, and industry news
             from the TBM spare parts sector
           </p>
@@ -71,7 +72,7 @@ export default function BlogPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors"
+              className="inline-flex items-center gap-2 bg-[#CC0000] text-white px-6 py-3 rounded-lg hover:bg-[#AA0000] transition-colors font-bold"
             >
               Contact Us for More Information
               <FiArrowRight />
@@ -90,7 +91,7 @@ export default function BlogPage() {
                   </div>
                   <div className="p-8">
                     <div className="flex items-center gap-4 mb-4">
-                      <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">
+                      <span className="bg-[#CC0000]/10 text-[#CC0000] px-3 py-1 rounded-full text-sm font-bold">
                         {blogPosts[0].category}
                       </span>
                       <span className="text-gray-500 text-sm">Featured</span>
@@ -111,7 +112,7 @@ export default function BlogPage() {
                     </div>
                     <Link
                       href={`/blog/${blogPosts[0].id}`}
-                      className="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700"
+                      className="inline-flex items-center gap-2 text-[#CC0000] font-bold hover:underline"
                     >
                       Read More
                       <FiArrowRight />
@@ -134,7 +135,7 @@ export default function BlogPage() {
                     </div>
                   </div>
                   <div className="p-6">
-                    <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-[#CC0000]/10 text-[#CC0000] px-3 py-1 rounded-full text-sm font-bold">
                       {post.category}
                     </span>
                     <h3 className="text-xl font-bold mt-4 mb-3 text-gray-800">
@@ -149,7 +150,7 @@ export default function BlogPage() {
                     </div>
                     <Link
                       href={`/blog/${post.id}`}
-                      className="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700"
+                      className="inline-flex items-center gap-2 text-[#CC0000] font-bold hover:underline"
                     >
                       Read More
                       <FiArrowRight />
@@ -175,11 +176,11 @@ export default function BlogPage() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CC0000]/50 focus:border-[#CC0000]/50"
               />
               <button
                 type="submit"
-                className="bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors font-semibold"
+                className="bg-[#CC0000] text-white px-6 py-3 rounded-lg hover:bg-[#AA0000] transition-colors font-bold"
               >
                 Subscribe
               </button>
