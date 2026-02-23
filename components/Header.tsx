@@ -54,8 +54,8 @@ export default function Header() {
             <Image
               src="/images/logo.jpeg"
               alt="TBM Machines and Manufacturing Services Logo"
-              width={44}
-              height={44}
+              width={80}
+              height={80}
               className="object-contain rounded-lg"
             />
             <span className="text-lg font-black text-white hidden sm:block">
